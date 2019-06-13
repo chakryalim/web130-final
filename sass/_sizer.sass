@@ -1,0 +1,17 @@
+$mob-max: 425px
+$tab-min: 426px
+$tab-max: 1023px
+$desk-min: 1024px
+
+@mixin sizer($size)
+    @if $size == mobile
+        @media screen and (max-width: $mob-max)
+            @content          
+        
+    @else if $size == tablet 
+        @media screen and (min-width: $tab-min) and (max-width:$tab-max)
+            @content
+    
+    @else if $size == desktop 
+        @media screen and (min-width: $desk-min)
+            @content

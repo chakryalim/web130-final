@@ -1,0 +1,80 @@
+$primary: #051e3e
+@import 'sizer'
+@import '../node_modules/bootstrap/scss/bootstrap'
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Open+Sans:400,700&display=swap')
+
+$font-headline: 'Bungee Inline'
+$font-content: 'Open Sans'
+
+h2
+    font-family: $font-content
+    font-weight: 700
+
+h3
+    text-align: center
+
+p, a
+    font-family: $font-content
+
+.navbar
+    padding: 15px
+
+.navbar-brand
+    margin-right: 0
+    white-space: normal
+    
+#logo
+    font-family: $font-headline
+    font-weight: 700
+    color: #fff
+    font-size: 45px
+
+#tagline
+    font-weight: 700
+    color: #fff
+    text-align: center
+    
+.container
+    margin-top: 25px
+
+.logo-container
+    margin-top: 0
+
+article
+    margin: 0 20px 25px 20px
+
+img
+    width: 100%
+    height: auto
+
+.list-article   
+    max-height: 500px
+    overflow: hidden
+    
+.read-more
+    font-size: 15px
+    font-weight: bold
+    
+.card
+    border: none    
+
+.form
+    border: 5px solid #051e3e
+    margin: 100px 0
+    padding: 50px
+
+footer a
+    color: #fff
+
+
+@include sizer(tablet)
+    article
+        margin: 0 0 25px 0
+
+@include sizer(desktop)
+    article
+        margin: 0 0 25px 0
+        
+    .form
+        margin: 100px
+        
